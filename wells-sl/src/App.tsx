@@ -4,6 +4,7 @@ import { SelectedPage } from "@/shared/types";
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 import Project from "@/scenes/project";
+import Impact from "./scenes/impact";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>
@@ -31,6 +32,7 @@ function App() {
         setSelectedPage={setSelectedPage}/>
       <Home setSelectedPage={setSelectedPage}/>
       <Project setSelectedPage={setSelectedPage}/>
+      <Impact setSelectedPage={setSelectedPage}/>
     </div>
   )
 }

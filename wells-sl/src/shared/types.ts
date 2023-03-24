@@ -11,3 +11,11 @@ export interface ProjectType {
     title: string;
     description: string;
 }
+
+export interface ClassType {
+    name: string;
+    description?: string;
+    image: string;
+}
+
+//"?" in description makes it optional
