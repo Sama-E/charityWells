@@ -1,13 +1,17 @@
 import useMediaQuery from "@/hooks/usedMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
-import HomePageText from "@/assets/HomePageText.png";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { motion } from "framer-motion";
+
+// import HomePageText from "@/assets/HomePageText.png";
 import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import { motion } from "framer-motion";
+
+import HomePageText from "@/assets/HomeWaterText.png";
+import HomeDryGraphic from "@/assets/HomeDryGraphic.png";
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -38,7 +42,7 @@ const Home = ({ setSelectedPage }: Props) => {
                     }}
                 >
                     <div className="relative">
-                        <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
+                        <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-wishtext">
                             <img alt="home-page-text" src={HomePageText} />
                         </div>
                     </div>
@@ -80,7 +84,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 className="flex basis-3/5 justify-center md:z-10
                     md:ml-40 md:mt-16 md:justify-items-end"
             >
-                <img alt="home-pageGraphic" src={HomePageGraphic} />
+                <img alt="home-pageGraphic" src={HomeDryGraphic} />
             </div>
         </motion.div>
 
