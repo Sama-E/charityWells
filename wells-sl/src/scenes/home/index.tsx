@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import OxFam from "@/assets/OxfamGreen.png";
 import STC from "@/assets/SaveTheChildren.png";
+import ADB from "@/assets/ADB.png";
 
 
 type Props = {
@@ -87,12 +88,11 @@ const Home = ({ setSelectedPage }: Props) => {
             {isAboveMediumScreens && (
             <div className="h-[150px] w-full bg-primary-100 py-10">
                 <div className="mx-auto w-5/6">
-                    <div className="flex w-3/5 items-center justify-between gap-8">
-                        <h3 className="text-lg font-extrabold text-blue underline bg-white flex text-center rounded">The Roble Foundation</h3>
+                    <div className="flex w-5/5 items-center justify-between gap-8">
+                        <h3 className="text-lg font-extrabold text-blue underline bg-white flex text-center rounded p-2">The Roble Foundation</h3>
                         <img className="h-[50px] w-[120px] rounded" alt="OxFam" src={OxFam} />
                         <img className="h-[70px] w-[110px] rounded" alt="SaveTheChildren" src={STC} />
-                        <h3>African Development Foundation</h3>
-                        <h3>Save the Children</h3>
+                        <img className="h-[70px] w-[130px] rounded" alt="ADB" src={ADB} />
                     </div>
                 </div>
             </div>

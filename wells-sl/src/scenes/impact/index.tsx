@@ -5,10 +5,9 @@ import Impact from "./Impact";
 
 import image1 from "@/assets/image1.png";
 import image2 from "@/assets/image2.png";
-import image3 from "@/assets/image3.png";
-import image4 from "@/assets/image4.png";
-import image5 from "@/assets/image5.png";
-import image6 from "@/assets/image6.png";
+import image3 from "@/assets/image4.png";
+import image4 from "@/assets/image5.png";
+import image5 from "@/assets/image6.png";
 
 
 const impacts: Array<ClassType> = [
@@ -22,23 +21,18 @@ const impacts: Array<ClassType> = [
         image: image2,
     },
     {
-        name: "Yoga Classes",
+        name: "Adventure Classes",
         description: "Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity",
         image: image3,
     },
     {
-        name: "Adventure Classes",
-        description: "Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity",
-        image: image4,
-    },
-    {
         name: "Rock Climbing Classes",
-        image: image5,
+        image: image4,
     },
     {
         name: "Cycling Classes",
         description: "Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity",
-        image: image6,
+        image: image5,
     },
 ]
 
