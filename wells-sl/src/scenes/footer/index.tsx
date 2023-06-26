@@ -5,13 +5,13 @@ const Footer = () => {
         <footer className="bg-primary-100 py-16">
             <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
                 <div className="mt-16 basis-1/2 md:mt-0">
-                    <img alt="logo" src={Logo} />
+                    <h1 className={`text-2xl font-mono font-semibold`}>
+                        WISHWELLS
+                    </h1>
                     <p className="my-5">
-                        Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-                        Studios to get the Body Shapes That you Dream of.. Get Your Dream
-                        Body Now.
+                        WishWells Programs aids an unheralded democracy in the horn of Africa to discover and build sustainable water wells in an effort maintain an proportionate agricultural yield to stave off famine, poverty, and economic decline.
                     </p>
-                    <p>© Evogym All Rights Reserved.</p>
+                    <p>© Wish Wells All Rights Reserved.</p>
                 </div>
                 <div className="mt-16 basis-1/4 md:mt-0">
                     <h4 className="font-bold">Links</h4>

@@ -18,19 +18,19 @@ const projects: Array<ProjectType> = [
         icon: <HomeModernIcon className="h-6 w-6" />,
         title: "Locate and Access Water from Boreholes",
         description:
-            "The ability to locate and drill boreholes to access clean ground water reserves in an environmental safe manner."
-    },
-    {
-        icon: <UserGroupIcon className="h-6 w-6" />,
-        title: "Irrigation",
-        description:
-            "The efficient and effective practice of applying controlled amounts of water to land to help grow crops, landscape plants, and lawns."
+            "The ability to locate and drill boreholes to access clean ground water reserves in an environmental safe manner. Educate locals on maintenance of the water wells and explore new technologies to increase efficiency and sustanability."
     },
     {
         icon: <AcademicCapIcon className="h-6 w-6" />,
-        title: "Land Husbandry",
+        title: "Agricultural Education Land Husbandry",
         description:
-            "The care and management of the land for productive purposes; only through sound land husbandry can the land's productive potential be sustained and enhanced."
+            "The care and management of the land for productive purposes; only through sound land husbandry can the land's productive potential be sustained and enhanced. The effective practice of applying and distrubting controlled amounts of water to help grow crops, and sustain livestock for increased economic production."
+    },
+    {
+        icon: <UserGroupIcon className="h-6 w-6" />,
+        title: "Community Benefits",
+        description:
+            "The maintenance of a clean water supply for local communities to use for santitation purposes and to decrease economic hardships, poverty, famine, health emergencies and to increase the overall sustainability of communities."
     },
 ];
 
@@ -68,9 +68,7 @@ const project = ({ setSelectedPage }: Props) => {
                 >
                     <HText>WATER IS THE ELIXIR OF LIFE</HText>
                     <p className="my-5 text-sm">
-                        Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity
-                        Water Wells Charity Water Wells Charity Water Wells Charity Water Wells CharityWater Wells Charity 
-                        Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity
+                        In East Africa, water scarcity is a burden on women and girls and a barrier toward education and economic equality. Women and girls are responsible for water collection in 8 out of 10 households where water is not piped into the home. (WHO and UNICEF, 2017) Women and girls in developing countries walk an average of 3.5 miles every day to fetch water. (USAID, 2013) Lack of sanitation facilities (with clean water) for girls reaching puberty makes them more likely to miss school than boys. (WHO and UNICEF, 2019) The impact on child mortality rates is devastating with more than 297,000 children under five who die annually from diarrhoeal diseases due to poor sanitation, poor hygiene, or unsafe drinking water. (WHO, 2019) Contaminated water can transmit diseases such diarrhea, cholera, dysentery, typhoid, and polio. Contaminated drinking water is estimated to cause 485,000 diarrheal deaths each year. (WHO)
                     </p>
                 </motion.div>
 
@@ -148,11 +146,9 @@ const project = ({ setSelectedPage }: Props) => {
 
                         {/* BUTTON */}
                         <div className="relative mt-16">
-                            <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
                                 <ActionButton setSelectedPage={setSelectedPage}>
                                     Donate Now
                                 </ActionButton>
-                            </div>
                         </div>
                     </div>
                 </div>

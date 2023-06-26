@@ -62,11 +62,17 @@ const impact = ({ setSelectedPage }: Props) => {
                 >
                     <div className="md:w-3/5">
                         <HText>IMPACT</HText>
-                        <p className="py-5">
-                        Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity
-                        Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity
-                        Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity
-                        </p>
+                        <ul>
+                            <li className="py-3">
+                            Wish Wells commitment to local communities continues to build trust and fosters an environment of economic stability, growth and increased opportunities.
+                            </li>
+                            <li className="py-3">
+                            Water Wells provides communities with resilience against droughts, food shortages, climate change and more.
+                            </li>
+                            <li className="py-3">
+                            Wish Wells evaluate community needs and the needs of individuals, and make compassionate investments in water distribution for community use and sanitation purposes.
+                            </li>
+                        </ul>
                     </div>
                 </motion.div>
                 <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
