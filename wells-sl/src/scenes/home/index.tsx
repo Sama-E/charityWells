@@ -4,14 +4,9 @@ import ActionButton from "@/shared/ActionButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
-// import HomePageText from "@/assets/HomePageText.png";
-import HomePageGraphic from "@/assets/HomePageGraphic.png";
-import SponsorRedBull from "@/assets/SponsorRedBull.png";
-import SponsorForbes from "@/assets/SponsorForbes.png";
-import SponsorFortune from "@/assets/SponsorFortune.png";
+import OxFam from "@/assets/OxfamGreen.png";
+import STC from "@/assets/SaveTheChildren.png";
 
-import HomePageText from "@/assets/HomeWaterText.png";
-import HomeDryGraphic from "@/assets/HomeDryGraphic.png";
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -21,7 +16,9 @@ const Home = ({ setSelectedPage }: Props) => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
     return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+    
+    // BACKGROUND-IMAGE SECTION
+    <section id="home" className="gap-16 bg-gray-20 py-10 bg-cover bg-no-repeat before: z-[-1] bg-[url('./assets/Ferhan-in-Ruqi.png')] md:h-full md:pb-0">
         {/* IMAGE AND MAIN HEADER */}
         <motion.div
             className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
@@ -41,16 +38,21 @@ const Home = ({ setSelectedPage }: Props) => {
                         visible: { opacity: 1, x: 0 },
                     }}
                 >
-                    <div className="relative">
-                        <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-wishtext">
-                            <img alt="home-page-text" src={HomePageText} />
-                        </div>
-                    </div>
 
-                    <p className="mt-8 text-sm">
-                        Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-                        Studios to get the Body Shapes That you Dream of.. Get Your Dream
-                        Body Now.
+                        <div className="relative">
+
+                            <h1 className={`flex text-7xl font-extrabold text-white`}>
+                                WISH WELLS
+                            </h1>
+                            <h2 className={`flex justify-center text-5xl font-medium text-white`}>
+                                Find. Built. Grow. Nourish.
+                            </h2>
+
+                        </div>
+                    
+
+                    <p className="mt-8 text-md text-white">
+                        WishWells Programs aids an unheralded democracy in the horn of Africa to discover and build sustainable water wells in an effort maintain an proportionate agricultural yield to stave off famine, poverty, and economic decline.
                     </p>
                 </motion.div>
 
@@ -70,7 +72,7 @@ const Home = ({ setSelectedPage }: Props) => {
                         Donate Now
                     </ActionButton>
                     <AnchorLink
-                        className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
+                        className="text-sm font-extrabold text-white underline hover:text-secondary-500"
                         onClick={() => setSelectedPage(SelectedPage.ContactUs)}
                         href={`#${SelectedPage.ContactUs}`}
                     >
@@ -79,26 +81,21 @@ const Home = ({ setSelectedPage }: Props) => {
                 </motion.div>
             </div>
 
-            {/* IMAGE */}
-            <div
-                className="flex basis-3/5 justify-center md:z-10
-                    md:ml-40 md:mt-16 md:justify-items-end"
-            >
-                <img alt="home-pageGraphic" src={HomeDryGraphic} />
-            </div>
         </motion.div>
 
         {/* SPONSORS */}
             {isAboveMediumScreens && (
-        <div className="h-[150px] w-full bg-primary-100 py-10">
-            <div className="mx-auto w-5/6">
-                <div className="flex w-3/5 items-center justify-between gap-8">
-                    <img alt="redbull-sponsor" src={SponsorRedBull} />
-                    <img alt="forbes-sponsor" src={SponsorForbes} />
-                    <img alt="fortune-sponsor" src={SponsorFortune} />
+            <div className="h-[150px] w-full bg-primary-100 py-10">
+                <div className="mx-auto w-5/6">
+                    <div className="flex w-3/5 items-center justify-between gap-8">
+                        <h3 className="text-lg font-extrabold text-blue underline bg-white flex text-center rounded">The Roble Foundation</h3>
+                        <img className="h-[50px] w-[120px] rounded" alt="OxFam" src={OxFam} />
+                        <img className="h-[70px] w-[110px] rounded" alt="SaveTheChildren" src={STC} />
+                        <h3>African Development Foundation</h3>
+                        <h3>Save the Children</h3>
+                    </div>
                 </div>
             </div>
-        </div>
         )}
     </section>
     );

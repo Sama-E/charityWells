@@ -139,9 +139,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                                 visible: { opacity: 1, y: 0 },
                             }}
                         >
-                            <div className="md:before:content-evolvetext w-full before:absolute before:-bottom-20 before:-right-20 before:z-[-1]">
+                            <div>
                                 <img 
-                                    className="w-full"
+                                    className="w-full rounded"
                                     alt="contact-us-page-graphic"
                                     src={ContactUsPageGraphic}
                                 />
