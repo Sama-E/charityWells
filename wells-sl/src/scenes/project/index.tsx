@@ -47,12 +47,8 @@ type Props = {
 
 const project = ({ setSelectedPage }: Props) => {
     return (
-        <section 
-            id="project"
-            className="mx-auto m-h-full w-5/6 py-20"
-        >
-            <motion.div
-                onViewportEnter={() => setSelectedPage(SelectedPage.Project)}
+        <section id="project" className="mx-auto m-h-full w-5/6 py-20" >
+            <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Project)}
             >
                 {/* HEADER */}
                 <motion.div 
@@ -67,9 +63,11 @@ const project = ({ setSelectedPage }: Props) => {
                     }}               
                 >
                     <HText>WATER IS THE ELIXIR OF LIFE</HText>
-                    <p className="my-5 text-sm">
-                        In East Africa, water scarcity is a burden on women and girls and a barrier toward education and economic equality. Women and girls are responsible for water collection in 8 out of 10 households where water is not piped into the home. (WHO and UNICEF, 2017) Women and girls in developing countries walk an average of 3.5 miles every day to fetch water. (USAID, 2013) Lack of sanitation facilities (with clean water) for girls reaching puberty makes them more likely to miss school than boys. (WHO and UNICEF, 2019) The impact on child mortality rates is devastating with more than 297,000 children under five who die annually from diarrhoeal diseases due to poor sanitation, poor hygiene, or unsafe drinking water. (WHO, 2019) Contaminated water can transmit diseases such diarrhea, cholera, dysentery, typhoid, and polio. Contaminated drinking water is estimated to cause 485,000 diarrheal deaths each year. (WHO)
-                    </p>
+                    <div className="px-10">
+                        <p className="my-5 text-sm">
+                            In East Africa, water scarcity is a burden on women and girls and a barrier toward education and economic equality. Women and girls are responsible for water collection in 8 out of 10 households where water is not piped into the home. (WHO and UNICEF, 2017) Women and girls in developing countries walk an average of 3.5 miles every day to fetch water. (USAID, 2013) Lack of sanitation facilities (with clean water) for girls reaching puberty makes them more likely to miss school than boys. (WHO and UNICEF, 2019) The impact on child mortality rates is devastating with more than 297,000 children under five who die annually from diarrhoeal diseases due to poor sanitation, poor hygiene, or unsafe drinking water. (WHO, 2019) Contaminated water can transmit diseases such diarrhea, cholera, dysentery, typhoid, and polio. Contaminated drinking water is estimated to cause 485,000 diarrheal deaths each year. (WHO)
+                        </p>
+                    </div>
                 </motion.div>
 
                 {/* PROJECT */}

@@ -41,12 +41,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                     }}
                 >
                     <HText>
-                        <span className="text-primary-500">DONATE </span>NOW
+                        <span className="text-primary-500">LEARN </span>MORE
                     </HText>
                         <p className="my-5">
-                            Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-                            Studios to get the Body Shapes That you Dream of.. Get Your Dream
-                            Body Now.
+                            Water is the exilir of life. Help build a water well. You can make a difference. <b>Donate Today.</b>
                         </p>
                 </motion.div>
                 {/* FORM AND IMAGE */}
