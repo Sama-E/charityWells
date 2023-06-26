@@ -12,26 +12,24 @@ import image5 from "@/assets/image6.png";
 
 const impacts: Array<ClassType> = [
     {
-        name: "Weight Training Classes",
-        description: "Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity",
+        name: "Impact on Women",
         image: image1,
     },
     {
-        name: "Training Classes",
+        name: "Impact on Sanitation",
         image: image2,
     },
     {
-        name: "Adventure Classes",
-        description: "Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity",
+        name: "Impact of Available Technologies",
         image: image3,
     },
     {
-        name: "Rock Climbing Classes",
+        name: "Impact of Community Support",
         image: image4,
     },
     {
-        name: "Cycling Classes",
-        description: "Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity Water Wells Charity",
+        name: "Impact on Production",
+        description: "Increased agricultural production and food security ",
         image: image5,
     },
 ]
