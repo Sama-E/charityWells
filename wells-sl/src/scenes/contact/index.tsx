@@ -44,7 +44,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                         <span className="text-primary-500">LEARN </span>MORE
                     </HText>
                         <p className="my-5">
-                            Water is the exilir of life. Help build a water well. You can make a difference. <b>Donate Today.</b>
+                            Water is the exilir of life. Help build a water well. You can make a difference. <b>Donate Today.</b> Contact us to learn more.
                         </p>
                 </motion.div>
                 {/* FORM AND IMAGE */}
