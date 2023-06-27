@@ -5,8 +5,10 @@ import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 import Project from "@/scenes/project";
 import Impact from "@/scenes/impact";
+import Donate from "@/scenes/donate";
 import ContactUs from "@/scenes/contact";
 import Footer from "@/scenes/footer";
+
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>
@@ -35,6 +37,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage}/>
       <Project setSelectedPage={setSelectedPage}/>
       <Impact setSelectedPage={setSelectedPage}/>
+      <Donate setSelectedPage={setSelectedPage}/>
       <ContactUs setSelectedPage={setSelectedPage}/>
       <Footer />
     </div>

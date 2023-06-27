@@ -53,12 +53,17 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                                     selectedPage={selectedPage}
                                     setSelectedPage={setSelectedPage}
                                 />
+                                <Link 
+                                    page="Donate" 
+                                    selectedPage={selectedPage}
+                                    setSelectedPage={setSelectedPage}
+                                />
                             </div>
-                            <div className={`${flexBetween} gap-8`}>
+                            {/* <div className={`${flexBetween} gap-8`}>
                                 <ActionButton setSelectedPage = {setSelectedPage}>
                                     DONATE
                                 </ActionButton>
-                            </div>
+                            </div> */}
                         </div>
                         ) : (
                         <button 
