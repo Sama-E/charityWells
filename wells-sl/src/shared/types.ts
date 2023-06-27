@@ -18,4 +18,8 @@ export interface ClassType {
     image: string;
 }
 
+export interface AmountType {
+    amount: string;
+}
+
 //"?" in description makes it optional
