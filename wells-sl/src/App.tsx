@@ -38,7 +38,7 @@ function App() {
       <Project setSelectedPage={setSelectedPage}/>
       <Impact setSelectedPage={setSelectedPage}/>
       <ContactUs setSelectedPage={setSelectedPage}/>
-      <Donate />
+      {/* <Donate /> */}
       <Footer />
     </div>
   )
