@@ -3,14 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Sama-E.github.io/charityWells",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.16",
     "framer-motion": "^10.8.2",
+    "gh-pages": "^6.1.0",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
