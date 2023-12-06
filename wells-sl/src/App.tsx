@@ -5,7 +5,6 @@ import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 import Project from "@/scenes/project";
 import Impact from "@/scenes/impact";
-import Donate from "@/scenes/donate";
 import ContactUs from "@/scenes/contact";
 import Footer from "@/scenes/footer";
 
