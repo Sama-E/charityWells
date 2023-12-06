@@ -76,7 +76,7 @@ const project = ({ setSelectedPage }: Props) => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
-                    variants={container}
+                    // variants={container}
                 >
                     {projects.map((project: ProjectType) => (
                         <Project 
