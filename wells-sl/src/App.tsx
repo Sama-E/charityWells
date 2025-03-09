@@ -3,10 +3,13 @@ import { SelectedPage } from "@/shared/types";
 
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
-import Project from "@/scenes/project";
-import Impact from "@/scenes/impact";
+// import Project from "@/scenes/project";
+// import Impact from "@/scenes/impact";
 import ContactUs from "@/scenes/contact";
 import Footer from "@/scenes/footer";
+import Wells from "./scenes/wells";
+import Mission from "./scenes/mission";
+import Works from "./scenes/work";
 
 
 function App() {
@@ -34,8 +37,11 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}/>
       <Home setSelectedPage={setSelectedPage}/>
-      <Project setSelectedPage={setSelectedPage}/>
-      <Impact setSelectedPage={setSelectedPage}/>
+      <Mission setSelectedPage={setSelectedPage}/>
+      <Wells setSelectedPage={setSelectedPage}/>
+      {/* <Project setSelectedPage={setSelectedPage}/> */}
+      <Works setSelectedPage={setSelectedPage}/>
+      {/* <Impact setSelectedPage={setSelectedPage}/> */}
       <ContactUs setSelectedPage={setSelectedPage}/>
       {/* <Donate /> */}
       <Footer />

@@ -24,8 +24,8 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                 <div className={`${flexBetween} mx-auto w-5/6`}>
                     <div className={`${flexBetween} w-full gap-16`}>
                         {/* LEFT-SIDE */}
-                        <h1 className={`text-2xl font-mono font-semibold`}>
-                            WISHWELLS
+                        <h1 className={`text-xl font-mono font-semibold w-1/3`}>
+                            Roble Foundation
                         </h1>
 
                         {/* RIGHT-SIDE */}
@@ -39,22 +39,22 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                                     setSelectedPage={setSelectedPage}
                                 />
                                 <Link 
-                                    page="Project"
+                                    page="Mission"
                                     selectedPage={selectedPage}
                                     setSelectedPage={setSelectedPage} 
                                 />
                                 <Link 
-                                    page="Impact"
+                                    page="Wells"
+                                    selectedPage={selectedPage}
+                                    setSelectedPage={setSelectedPage}
+                                />
+                                <Link 
+                                    page="Works" 
                                     selectedPage={selectedPage}
                                     setSelectedPage={setSelectedPage}
                                 />
                                 <Link 
                                     page="Contact Us" 
-                                    selectedPage={selectedPage}
-                                    setSelectedPage={setSelectedPage}
-                                />
-                                <Link 
-                                    page="Donate" 
                                     selectedPage={selectedPage}
                                     setSelectedPage={setSelectedPage}
                                 />

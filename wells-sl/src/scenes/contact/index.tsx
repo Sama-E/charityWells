@@ -1,6 +1,7 @@
 import { SelectedPage } from '@/shared/types';
 import { motion } from "framer-motion";
 import { useForm } from 'react-hook-form';
+import image10 from "@/assets/imagesNew/10 - Cabdi Mahamoud.jpg"
 import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 import HText from '@/shared/HText';
 
@@ -10,7 +11,7 @@ type Props = {
 
 const ContactUs = ({ setSelectedPage }: Props) => {
 
-    const inputStyles = `mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
+    const inputStyles = `mb-5 w-full rounded-lg border-2 border-gray-100 px-5 py-3 placeholder-black`;
 
     const {
         register,
@@ -44,7 +45,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                         <span className="text-primary-500">LEARN </span>MORE
                     </HText>
                         <p className="my-5">
-                            Water is the exilir of life. Help build a water well. You can make a difference. <b>Donate Today.</b> Contact us to learn more.
+                        <b>Make a Difference Today:</b> Every dollar, every effort, and every voice matters in the fight for clean water access.Contact us to learn more.
                         </p>
                 </motion.div>
                 {/* FORM AND IMAGE */}
@@ -139,9 +140,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                         >
                             <div>
                                 <img 
-                                    className="w-full rounded"
+                                    className="w-full rounded-lg"
                                     alt="contact-us-page-graphic"
-                                    src={ContactUsPageGraphic}
+                                    src={image10}
                                 />
                             </div>
                         </motion.div>

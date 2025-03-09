@@ -85,7 +85,7 @@ const Home = ({ setSelectedPage }: Props) => {
         </motion.div>
 
         {/* SPONSORS */}
-            {isAboveMediumScreens && (
+            {/* {isAboveMediumScreens && (
             <div className="h-[150px] w-full bg-primary-100 py-10">
                 <div className="mx-auto w-5/6">
                     <div className="flex w-5/5 items-center justify-between gap-8">
@@ -96,7 +96,7 @@ const Home = ({ setSelectedPage }: Props) => {
                     </div>
                 </div>
             </div>
-        )}
+        )} */}
     </section>
     );
 };
