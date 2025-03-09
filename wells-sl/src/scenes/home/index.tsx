@@ -19,7 +19,6 @@ const Home = ({ setSelectedPage }: Props) => {
     return (
     
     // BACKGROUND-IMAGE SECTION
-    // <section id="home" className="gap-16 bg-gray-20 py-10 bg-cover bg-no-repeat before: z-[-1] bg-[url('./assets/imagesNew/3-Maryam Hussein.jpg')] md:h-full md:pb-0">
     <section id="home" className="gap-16 bg-gray-20 py-10 bg-cover bg-no-repeat before: z-[-1] bg-[url('./assets/3MaryamHussein.jpg')] md:h-full md:pb-0">
         {/* IMAGE AND MAIN HEADER */}
         <motion.div
