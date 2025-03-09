@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 
 import Navbar from "@/scenes/navbar";
-import Home from "@/scenes/home";
+import Home from "@/scenes/home/index";
 // import Project from "@/scenes/project";
 // import Impact from "@/scenes/impact";
 import ContactUs from "@/scenes/contact";
