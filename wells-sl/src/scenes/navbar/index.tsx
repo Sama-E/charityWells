@@ -16,7 +16,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
     const flexBetween = "flex items-center justify-between";
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-    const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
+    const navbarBackground = isTopOfPage ? "" : "bg-gray-500 drop-shadow";
 
     return (
         <nav>
@@ -24,7 +24,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                 <div className={`${flexBetween} mx-auto w-5/6`}>
                     <div className={`${flexBetween} w-full gap-16`}>
                         {/* LEFT-SIDE */}
-                        <h1 className={`text-xl font-mono font-semibold w-1/3`}>
+                        <h1 className={`text-xl text-white font-mono font-semibold w-1/3`}>
                             Roble Foundation
                         </h1>
 
@@ -32,7 +32,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                         {/* DESKTOP MENU */}
                         {isAboveMediumScreens ? (
                         <div className={`${flexBetween} w-full`}>
-                            <div className={`${flexBetween} gap-8 text-med `}>
+                            <div className={`${flexBetween} gap-8 text-med text-white `}>
                                 <Link 
                                     page="Home"
                                     selectedPage={selectedPage}

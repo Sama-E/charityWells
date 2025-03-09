@@ -73,7 +73,7 @@ const Wells = ({ setSelectedPage }: Props) => {
           <div className="items-center justify-center mt-10">
             {/* GRAPHICS AND DESCRIPTION */}
               {/* GRAPHIC */}
-              <div className="flex basis-2/3 justify-center px-5">
+              <div className="hidden md:flex basis-2/3 justify-center px-5 ">
                 <img 
                     className="rounded-3xl shadow-2xl"
                     alt="map"
@@ -83,7 +83,7 @@ const Wells = ({ setSelectedPage }: Props) => {
 
               {/* LOCATIONS */}
               <div className="flex basis-1/3 mt-10">
-                <div className="grid grid-cols-2 gap-8 px-5">
+                <div className="grid grid-cols-1 gap-8 p-2 md:px-5 md:grid-cols-2">
                 {locations.map((location: LocationType) => (
                   <Location 
                     // icon={location.icon}
