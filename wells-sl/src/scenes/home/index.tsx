@@ -43,17 +43,17 @@ const Home = ({ setSelectedPage }: Props) => {
                         <div className="relative">
 
                             <h1 className={`flex text-7xl font-extrabold text-white`}>
-                                WISH WELLS
+                                The Roble Foundation
                             </h1>
                             <h2 className={`flex justify-center text-5xl font-medium text-white`}>
-                                Find. Built. Grow. Nourish.
+                                Find. Built. Nourish.
                             </h2>
 
                         </div>
                     
 
                     <p className="mt-8 text-md text-white">
-                        WishWells Programs aids an unheralded democracy in the horn of Africa to discover and build sustainable water wells in an effort maintain an proportionate agricultural yield to stave off famine, poverty, and economic decline.
+                        The Roble Foundation is a non-profit organization dedicated to tackling the critical issue of water scarcity in the Sanag Region of Somaliland. Clean and safe water is essential for health, agriculture, and economic stability. Yet, for many communities in this region, accessing water is a daily struggle that profoundly affects their quality of life and opportunities for growth.
                     </p>
                 </motion.div>
 
